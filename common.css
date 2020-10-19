@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* CSS Document */
+html{margin: 0 ; padding: 0;}
+body{ margin: 0 auto; margin: 0 auto; height: auto;font-size: 12px; font-family: 'Alegreya Sans SC', sans-serif;}
+ul{/* text-indent:-1em; */padding-left:-1em;padding-left: 0px;}
+ul li{list-style: none;}
+p{text-align: center;}
+dl,dt,dd{margin: 0; padding: 0;}
+/*---------link-----------*/
+a {position: relative;display: inline-block;transition: .3s;text-decoration: none;}
+a::after {position: absolute;bottom: 0; left: 0;content: '';width: 0;height: 1px;background-color: #2ecc71;transition: .3s;}
+a:hover::after {width: 100%;}
+a:active{color:#000;}
+a:visited {color: #000;}
+
+footer a {position: relative;display: inline-block;transition: .3s;text-decoration: none; text-indent: 1em;padding-left: 1em;}
+footer a::after {position: absolute;bottom: 0; left: 0;content: '';width: 0;height: 1px;background-color: #2ecc71;transition: .3s;}
+footer a:hover::after {width: 100%;}
+footer a:active{color:#fff;}
+footer a:visited {color: #fff;}
+
+/*---------midasi----------*/
+h1{font-size: 40px;color: #ffffff;position: absolute;top: 40%;left: 25%;}
+h2{text-align: center;font-size: 30px;margin: 0 auto;}
+h3{text-align: center;font-size: 25px;font-weight: 500;}
+
+/*----------nav-----------*/
+.nav-menu{display: flex;flex: inherit;flex-wrap: nowrap;justify-content: space-between;align-items: center;padding: 0 10px;}
+header img{width: 100%;}
+
+
+/*---------main-----------*/
+.top-text{margin: 40px auto 60px;}
+
+/*----------top-----------*/
+
+/*---------frist----------*/
+
+.main-box{display:flex; flex:inherit; flex-wrap:wrap; justify-content:space-between; align-items:center}
+.main-box li{width: 30%; margin: 10px; text-align: center;}
+.main-box img{width: 90%;}
+
+
+/*---------scound----------*/
+.second-content{margin-bottom:0px;/* height: 133px; */margin-bottom: 0px;position: relative;bottom: 4%;}
+/* スライドレールの枠 */
+.second {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* height: 340px; */
+    /* margin-bottom: 100px; */
+    }
+.second img{width: 200px; }
+
+/* content4つをまとめたスライドブロック */
+.slideshow {padding: 0; display: flex; -webkit-animation: loop-slide 20s infinite linear 1s both;animation: loop-slide 20s infinite linear 1s both;}
+  
+  @-webkit-keyframes loop-slide { 
+    from {transform: translateX(0);}
+    to {transform: translateX(-100%);} }
+  
+  @keyframes loop-slide {
+    from {transform: translateX(0);}
+    to {transform: translateX(-100%);}  } 
+  
+  /* ホバー時に動きを止める（パターン2・3）*/
+  .slide-paused:hover .slideshow {-webkit-animation-play-state: paused;animation-play-state: paused; }
+  
+  /* ホバー時の装飾（パターン3） */
+  .content-hover { transition: all 0.2s; margin-right: 20px;}
+  
+  .content-hover:hover {transform: translateY(-20px);border-radius: 0 10%;box-shadow: 0 3px 10px 0 #333;opacity: 0.8;cursor: pointer;}
+
+/*---------footer----------*/
+footer{background-color: black;color: #fff;height: 300px;padding: 0px;height: auto;padding: 10px 0 20px;}
+footer img{width: 200px;}
+.footer-menu{display: inline-block;text-indent: -1em;padding-left: -1em;margin: 0;vertical-align: top;}
+.footer-menu li{padding: 4px;}
+footer small{display: block;margin: 30px auto 10px;text-align: center;}
+/*.footer-menu{ display: flex;flex: inherit;flex-wrap: nowrap;justify-content: space-between;align-items: center;}*/
+
+
+/*---------footer----------*/
+.about-frist{
+    margin: 30px auto 60px;
+}
+.about-second{}
+
+
+/*---------xxx----------*/
+.xxx-frist{margin: 30px; auto 60px;}
+.xxx{width: auto; margin: 0 auto 40px; text-align: left;}
+.xxx-second p{text-align: left;padding: 0 30px;text-indent: initial;}
+.xxx-second dt{padding-left: 10px;}
